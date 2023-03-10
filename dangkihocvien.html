@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+          ;
+            height: 100vh;
+        }
+        h1{
+            margin: 0 5px;
+            
+            background-color: aquamarine;
+        }
+        .hear{
+            width: 100vh;
+            background-color: rgb(176, 176, 69);
+        }
+        .haer1,
+        .haer2,
+        .haer3,
+        .haer4,
+        .haer5,
+        .haer6,
+        .haer7,
+        .haer-git2{
+            display: flex;
+        }
+        .haer-git2 > p{
+            font-size: 20px;
+            padding:15px 10px;
+        }
+       .couser{
+        font-size: 20px;
+        padding: 0 25px;
+        width: 100px;
+       }
+       .hear-inpput{
+        margin-top: 16px;
+        height: 30px;
+       }
+       .bnt{
+        padding: 5px 20%;
+    }
+    .button-bnt{
+           padding: 10px 35px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0 10px;
+            border:none;
+            transition: 1s background ;
+       }
+       .button-bnt:nth-child(1):hover{
+        background-color: green;
+        box-shadow: 0 0 10px red;
+        
+       }
+       .button-bnt:nth-child(2):hover{
+        background-color: red;
+        box-shadow: 0 0 10px green;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="hear">
+        <h1>ĐĂNG KÍ HỌC VIÊN</h1>
+        <div class="haer1">
+            <p class="couser" >Họ Và Tên</p>
+            <input class="hear-inpput" type="text" style=" width: 54%;">
+        </div>
+        <div class="haer2">
+            <p class="couser">Ngày Sinh</p>
+            <input class="hear-inpput" type="text">
+        </div>
+        <div class="haer3">
+            <p class="couser">Giới Tính</p>
+            <div class="haer-git2" style="margin-top: -13px;">
+                <input type="radio" name="claa" id=""  class="hear-inpput1">
+                <p>Nam</p>
+                <input type="radio" name="claa" id=""  class="hear-inpput1">
+                <p>Nữ</p>
+            </div>
+        </div>
+        <div class="haer4">
+            <p class="couser">Địa Chỉ</p>
+            <input class="hear-inpput" type="text"  style="height: 100px; width: 45%;">
+        </div>
+        <div class="haer5">
+            <p class="couser">Lớp</p>
+            <input class="hear-inpput" type="number" placeholder=" --Chọn Lớp --">
+        </div>
+        <div class="haer6">
+            <p class="couser">Email</p>
+            <input class="hear-inpput" type="text"  style=" width: 40%;">
+        </div>
+        <div class="haer7">
+            <p class="couser">Số Điện Thoại</p>
+            <input class="hear-inpput" type="number"  style=" width: 40%;">
+        </div>
+        <div class="bnt">
+            <button class="button-bnt" type="button">Đăng Kí</button>
+            <button class="button-bnt" type="reset">Nhập Lại</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .bodyfrom{
+
+            width: 100vh;
+            height: auto;
+            box-shadow: 1px 1px 5px #333,
+                        -1px -1px 5px #888;   
+        }
+        .from-h1{
+            text-align: center;
+            color: #fff;
+            background-color: orange;
+            margin-top: 0;
+            font-weight: 500;
+        }
+       .from-conter,.from-conter1{
+        display: flex;
+       }
+       .from-conter .from-input{
+        width: 50%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+       }
+       .from-input{
+        padding-left: 20px;
+        border-radius: 7px;
+       }
+       .from-conter1 .from-input{
+        width: 30%;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 50px;
+       }
+       .from-p,.from-contetnp{
+        padding-left: 50px;
+        font-size: 20px;
+        color: rgb(119, 119, 231) !important;
+        font-weight: bold;
+       }
+       .from-input2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+       }
+      .from-input2 p{
+        font-size: 20px;
+        color: orange;
+      }
+      .input-check{
+        margin-left: 30px;
+        accent-color: red;
+        
+      }
+      
+      .button{
+        display: block;
+        padding: 15px 20px;
+        margin:15px  110px;
+      }
+      .button-bnt{
+        margin: 0 20px;
+        padding: 10px 20px;
+        background-color: #888;
+        border: none;
+        transition: background 1.5s;
+      }
+      .button-bnt:nth-child(1):hover {
+        background:  green;
+      }
+      .button-bnt:nth-child(2):hover {
+        background:  red;
+      }
+
+    </style>
+</head>
+    
+<body>
+    <form action="">
+        <div class="bodyfrom">
+            <h1 class="from-h1">Sở Thích Của bạn</h1>
+            <div class="from-conter">
+                <p class="from-p">Họ và tên</p>
+                <input type="text" class="from-input" placeholder="Họ Và Tên">
+            </div>
+            <div class="from-conter1">
+                <p class="from-p">Email</p>
+                <input type="text"  class="from-input" placeholder="Email">
+            </div>
+            <div class="from-input2">
+                <p class="from-contetnp">Sở thích</p>
+                <input class="input-check" type="checkbox" name="" id="">
+                <p>Thể thao</p>
+                <input class="input-check" type="checkbox" name="" id="">
+                <p>Âm nhạc</p>
+                <input class="input-check" type="checkbox" name="" id="">
+                <p>Đọc Sách</p>
+                <input  class="input-check" type="checkbox" name="" id="" style="margin-left: 28%;">
+                <p >Lướt Wed</p>
+                <input class="input-check" type="checkbox" name="" id="">
+                <p>Chơi Gaem</p>
+                <input class="input-check" type="checkbox" name="" id="">
+                <p>Điện Ảnh</p>
+                <input class="input-check" type="checkbox" name="" id=""  style="margin-left: 28%;">
+                <p>Du lịch</p>
+            </div>
+            <div class="button">
+                <button class="button-bnt">Gửi Thông Tin</button>
+                <button class="button-bnt" type="reset">Nhập Lại</button>
+            </div>
+    </form>
+       
+    </div>
+</body>
+</html>
