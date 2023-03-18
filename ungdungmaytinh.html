@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        input{
+            margin: 10px 0;
+            padding:8px 20px;
+        }
+        .btn{
+            padding: 3px 20px;
+            background-color: #000;
+            color: #fff;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="Nhập Một Số" id="input">
+        <input type="number" placeholder="Nhập Một Số" id="input1">
+    </div>
+    <div>
+        <button class="btn" onclick=" lick()">Cộng</button>
+        <button class="btn" onclick=" lick1()">Trừ</button>
+        <button class="btn" onclick=" lick2()">Nhân</button>
+        <button class="btn" onclick=" lick3()">Chia</button>
+    </div>
+    <p id="relust">RELUST</p>
+    <script>
+        
+        console.log(input1)
+        function lick() {
+            let relusts = document.getElementById('relust');
+            let input = document.querySelector('#input').value;
+            let input1 = document.querySelector('#input1').value;
+            let tong = Number(input) + Number(input1);
+            relusts.innerHTML = 'Kết Quả :'  + tong;
+        }
+        function lick2() {
+            let relusts = document.getElementById('relust');
+            let input = document.querySelector('#input').value;
+            let input1 = document.querySelector('#input1').value;
+            let tong = Number(input) - Number(input1);
+            relusts.innerHTML = 'Kết Quả :'  + tong;
+        }
+        function lick2() {
+            let relusts = document.getElementById('relust');
+            let input = document.querySelector('#input').value;
+            let input1 = document.querySelector('#input1').value;
+            let tong = Number(input) * Number(input1);
+            relusts.innerHTML = 'Kết Quả :'  + tong;
+        }
+        function lick3() {
+            let relusts = document.getElementById('relust');
+            let input = document.querySelector('#input').value;
+            let input1 = document.querySelector('#input1').value;
+            let tong = Number(input) / Number(input1);
+            relusts.innerHTML = 'Kết Quả :'  + tong;
+        }
+    </script>
+</body>
+</html>

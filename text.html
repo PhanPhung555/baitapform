@@ -6,7 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        display: grid;
+        place-items: center;
+        
+    }
+    .boxinput{
+        display: flex;
+        margin: 30px 40px;
+        background-color: #999;
+        padding: 20px 20px;
+       
+    }
+    .box1,.box2,.box3{
+        padding-left: 100px;
+
+    }
+    .btn{
+        width: 100px ;
+        height: 40px;
+        margin-left: 50px;
+       margin-top: 70px;
+      
+        
+    }
+    .boxinput p {
+        font-weight: bold;
+        font-size: 26px;
+        text-shadow: 0 0 10px green;
+    }
+    select{
+        width: 200px;
+        padding: 5px 0;
+    }
+    
+
+</style>
 <body>
-    <h1 style="display: inline-block;">hello work</h1>
+    <div class="boxinput">
+        <div class="box1">
+            <p>Amount</p>
+            <input type="text" style="padding: 5px 0;" id="output">
+        </div>
+        <div class="box2">
+            <p>FROM CURRENCY</p>
+             <select name="" id="" id="input_1">
+                <option value="">VIỆT NAM</option>
+                <option value="">USD</option>
+             </select>
+        </div>
+        <div class="box3">
+            <p>TO CURRENCY</p>
+            <select name="" id="" id="input_2">
+               <option value="">USD</option>
+               <option value="">VIỆT NAM</option>
+            </select>
+        </div>
+     <button class="btn">CONVERT</button>
+   </div>
+
+
+
+   <script>
+    var out1 = document.getElementById('input_1');
+    console.log(out1)
+   </script>
+
 </body>
 </html>
