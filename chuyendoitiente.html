@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền Tệ</title>
+    <style>
+        body{
+         
+            background-color: #777;
+            color: #fff;
+            display: grid;
+            place-items: center;
+        }
+        .box{
+            display: flex;
+        }
+        .box1,.box2,.box3{
+            margin:0 40px;
+            font-size: 20px;
+
+        }
+        .bnt{
+            width: 100px;
+            height: 30px;
+            margin-top: 60px;
+            background-color: rgb(206, 92, 202);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1">
+            <p >Amount</p>
+            <input type="number" id="input">
+        </div>
+        <div class="box2">
+            <p >From Currency</p>
+           <select name="" id="input1" >
+            <option value="VN" >Việt Nam</option>
+            <option value="USD" >Đola</option>
+           </select>
+        </div>
+        <div class="box3">
+            <p >To Currency</p>
+            <select name="" id="input2" >
+             <option value="USD" >Đola</option>
+             <option value="VN" >Việt Nam</option>
+            </select>
+        </div>
+        <button class="bnt" onclick="method()">Convert</button>
+    </div>
+    <p id="relust" style="font-size: 25px;">Relust :</p>
+
+
+
+
+    <script>
+        
+        function method(){
+        let line = document.querySelector('#input').value;
+        let line1 = document.querySelector('#input1').value;
+        let line2 = document.querySelector('#input2').value;
+        let line3 ='' ;
+           if(line1 == line2){
+                line3 == line;
+           }
+           else if(line1 == "VN" && line2 == "USD"){
+               line3 = line/23000 + '$';
+            }
+            else if(line1 == "USD" && line2 == "VN"){
+                line3 =  line * 23000 + 'VND';
+           }
+           document.getElementById('relust').innerText = 'relust :' + line3;
+        }
+       
+        
+    </script>
+</body>
+</html>
