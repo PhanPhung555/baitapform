@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 100;
+            text-align: center;
+            text-shadow: 0 0 15px yellow;
+        }
+    </style>
+</head>
+<body>
+<p id="text">Relustn : </p>
+
+    <script>
+        let you = prompt('Nhập Tên Tài Khoản');
+        if(you == 'Admin'){
+          let you1 =  prompt('Nhập Mật Khẩu Của Admin ?')
+          if(you1 == 'TheMaster'){
+           document.querySelector('#text').innerHTML = 'Welcome.';
+          } else if(you1 == null){
+            document.querySelector('#text').innerHTML = ' Canceled.';
+        }else{
+              document.querySelector('#text').innerHTML = 'I dont know you';
+          }
+        }else if(you == null){
+            document.querySelector('#text').innerHTML = ' Canceled.';
+        } else{
+            document.querySelector('#text').innerHTML = 'I dont know you';
+        }
+    </script>
+</body>
+</html>
