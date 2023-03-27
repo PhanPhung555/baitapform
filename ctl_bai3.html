@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</title>
+</head>
+
+<body>
+    <p id="text"></p>
+    <script>
+        let a0 = 0;
+        let a1 = 1;
+        let a2 = 1;
+        let i;
+        for (i = 1; i < 21; i++) {
+            a0 = a1;
+            a1 = a2;
+            a2 = a0 + a1;
+            document.writeln(a2)
+
+        }
+
+
+    </script>
+</body>
+
+</html>

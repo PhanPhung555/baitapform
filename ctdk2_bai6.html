@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            width: 500px;
+            height: auto;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px #555;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .box input {
+            margin: 15px;
+            padding: 5px 30px;
+        }
+
+        button {
+            padding: 6px 20px;
+            border: none;
+            border-top: 2px solid red;
+            border-bottom: 2px solid green;
+        }
+
+        button:hover {
+            border-right: 2px solid red;
+            border-left: 2px solid green;
+        }
+
+        p {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            text-shadow: 0 0 2px green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Nhập Tham Số a, b của Phương Trình Bậc 1</p>
+        <label for=""> a =</label>
+        <input type="number" id="A"><br>
+        <label for=""> b =</label>
+        <input type="number" id="B"><br>
+        <button onclick="btn()">Kết Quả</button>
+        <h3 id="text">relust : </h3>
+    </div>
+    <script>
+        function btn() {
+            let a = document.getElementById('A').value;
+            let b = document.getElementById('B').value;
+            if (a == 0 && b == 0) {
+                document.getElementById('text').innerHTML = 'Phương Trình Vô Số Nghiệm '
+            } else if (a == 0 && b != 0) {
+                document.getElementById('text').innerHTML = 'Phương Trình Vô Nghiệm '
+            } else if (a != 0) {
+                x = -b / a;
+                document.getElementById('text').innerHTML = 'Phương Trình có 1 Nghiệm x là ' + x;
+            }
+            else {
+                alert('Bạn Cần Nhập lại')
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+        .box {
+            width: 500px;
+            height: auto;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px #555;
+            padding: 20px 20px;
+            text-align: center;
+        }
+        button,input{
+            padding: 8px 20px;
+        } 
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h4>Nhập Số Tiền Điện Tháng này ?</h4>
+        <input type="text" id="A">
+        <button onclick="kwd()">Click</button>
+        <p id="relust">Kết Quả :</p>
+    </div>
+    <script>
+        function kwd(){
+            let a = document.getElementById('A').value;
+            if(a > 0 && a < 50){
+                let b = 1.678;
+                let c = a * b;
+                document.getElementById('relust').innerHTML = c;
+            } else if(a > 51 && a < 100){
+                let b = 1.734;
+                let c = a * b;
+                document.getElementById('relust').innerHTML = 'Tiền Điện Tháng này là ' + c + ' Nghìn VND';
+            } else if(a > 100 && a < 200){
+                let b = 2;
+                let c = a * b;
+                document.getElementById('relust').innerHTML = 'Tiền Điện Tháng này là ' + c + ' Nghìn VND';
+            }else if(a > 201 && a < 300){
+                let b = 2.5;
+                let c = a * b;
+                document.getElementById('relust').innerHTML = 'Tiền Điện Tháng này là ' + c + ' Nghìn VND';
+            }else if(a > 301 && a < 400){
+                let b = 2.8;
+                let c = a * b;
+                document.getElementById('relust').innerHTML = 'Tiền Điện Tháng này là ' + c + ' Nghìn VND';
+            }else{
+                let b = 3;
+                let c = a * b;
+                document.getElementById('relust').innerHTML = 'Tiền Điện Tháng này là ' + c + ' Nghìn VND' ;
+            }
+        }
+    </script>
+</body>
+</html>

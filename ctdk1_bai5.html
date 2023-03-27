@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập điểm của bài KIỂM TRA thứ nhất");
+        let b = +prompt("Nhập điểm của bài KIỂM TRA thứ hai");
+        let c = +prompt("Nhập điểm của bài KIỂM TRA thứ ba");
+        let d = +prompt("Nhập điểm THI GIỮA KỲ");
+        let e = +prompt("Nhập điểm THI CUỐI KỲ");
+        let result = (a + b + c + d * 2 + e * 3) / 8;
+
+        if (result >= 8) {
+            alert("Bạn được học sinh giỏi");
+        } else if (result >= 6.5) {
+            alert("Bạn được học sinh khá");
+        } else if (result >= 5) {
+            alert("Bạn được học sinh trung bình");
+        } else {
+            alert("Chúng ta sẽ gặp lại nhau thêm lần nữa vào năm sau nhé! Mãi keo");
+        }
+    </script>
+</body>
+
+</html>

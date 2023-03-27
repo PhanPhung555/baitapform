@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</title>
+</head>
+<body>
+    
+    <script>
+      let a = +prompt('A');
+      let b = +prompt('B');
+      let c = +prompt('C');
+      if(a > b && a > c){
+        alert('a lớn nhất ' + a)
+      }else if(a < b && b > c){
+        alert('b lớn nhất ' + b)
+      }else if(a < c && b < c){
+        alert('c lớn nhất ' + c)
+      }else{
+        alert('Bằng nhau')
+      }
+    </script>
+</body>
+</html>
