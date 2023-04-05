@@ -52,18 +52,18 @@
         let a = document.getElementById('text');
         let count = 0;
         function check() {
-           for(i = 0; i < 3 ; i++){
+         
             let random = Math.round(Math.random( ) * 10);
             let value = document.getElementById('id1').value;
             if(random == value){
                 a.innerHTML = 'CHÚC MỪNG BẠN'
             } else {
-                a.innerHTML = 'SAI RỒI NHÉ !'
+                for(i = 0 ; i < 3; i++){
+                    a.innerHTML = 'SAI RỒI NHÉ !'
+                }
             }
-            break;
            }
 
-        }
     </script>
 </body>
 
