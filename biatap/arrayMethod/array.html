@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sử dụng các hàm có sẵn của mảng</title>
+</head>
+
+<body>
+    <script>
+        let array = ["Red", "Green", "White", "Black"];
+        document.writeln(array.join('"'))
+        document.writeln("<br>")
+
+        // bài 2
+        // let a = +prompt('Số cảu bạn')
+        // let array1 = [a,(a + 1),(a*4),(a*7)];
+        // document.writeln(array1.join('-'));
+
+        // bài 3
+        let b = prompt('Chuỗi string của bạn');
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        for(i = 0; i < b.length; i++){
+            if (UPPER.indexOf(b == -1)) {
+               console.log((b[i].toLowerCase())); ;
+            } else if (LOWER.indexOf(b == -1)) {
+                console.log((b[i].toUpperCase()));;
+            }else{
+                console.log(b);
+            }
+        }
+        
+        
+
+    </script>
+</body>
+
+</html>

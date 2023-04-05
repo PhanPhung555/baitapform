@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a;
+        let b;
+        do {
+            a = +prompt('Lenth Array A');
+
+        } while (a < 0 || a > 20);
+        let arra = new Array(a);
+        for (i = 0; i < arra.length; i++) {
+            arra[i] = prompt('STRING A ' + i);
+        };
+        do {
+            b = +prompt('Length Array B');
+        } while (b < 0 || b > 20);
+        let arrb = new Array(b);
+        for (j = 0; j < arrb.length; j++) {
+            arra[j] = prompt('STRING B ' + j);
+        };
+        let arrc = arra.concat(arrb);
+        document.write(arrc)
+    </script>
+</body>
+
+</html>

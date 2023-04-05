@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a;
+        do{
+            a = +prompt('Chuỗi kí tự')
+        }while(a < 0 || a > 20);
+        let arr = new Array(a);
+        for(i = 0; i < arr.length ; i++){
+            arr[i] = prompt('Kí tự ' + i)
+        };
+        let sum = 0;
+        for(j = 0; j < arr.length; j++){
+           for(x = 0; x < arr[j].length ; x++){
+            console.log(j + ' ' + arr[j][x]);
+            sum += arr[j][x];
+           }
+        }
+        console.log(sum.length);
+
+    </script>
+</body>
+</html>

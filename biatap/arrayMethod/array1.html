@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a;
+        do{
+            a = +prompt('length array')
+        }while(a <= 0 || a > 20);
+        let arr = new Array(a);
+        for(let j = 0; j < arr.length; j++){
+            arr[j] = prompt('length' + j)
+        }
+        // Cách 1
+        let arr1 = arr;
+        for(i = 0 ; i < arr1.length ; i++){
+          if(arr1[i] > 10){
+           document.writeln(arr1[i])
+          }
+        }
+        // Cách 2
+        for(let value of arr){
+            if(value > 10){
+                console.log(value);
+            }
+        }
+        // Cách 3
+        let arr2 = arr.filter(function(value){
+            return value > 10;
+        })
+        console.log(arr2);
+    </script>
+</body>
+
+</html>

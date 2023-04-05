@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a ;
+        do{
+            a = +prompt('Length Array')
+        }while(a < 0 || a > 20);
+        let arr = new Array(a);
+        for(i = 0; i < arr.length ; i++){
+            arr[i] = prompt('INDEX ' + i)
+        }
+        for(let value of arr){
+            if(value < 0){
+                document.write('Số nguyên âm là' + value + '<br>')
+            }else{
+                document.write('Số Nguyên Dương là ' + value + '<br>')  
+            }
+        }
+        // let arr1 = arr.forEach(function(value){
+        //     if(value < 0){
+        //         document.write(value)
+        //     }else {
+        //         document.write(value)
+        //     }
+        // });
+        // document.write(arr1)
+    </script>
+</body>
+</html>

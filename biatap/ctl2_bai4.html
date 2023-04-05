@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let a
+        let b
+
+        // let i = 1; /*Bước nhảy của chiều dài*/
+        // let j = 1; /*Bước nhảy của chiều rộng*/
+
+
+
+        do {
+            a = +prompt(" Nhập chiều dài: ")
+            b = +prompt("Nhập chiều rộng: ")
+
+            if (a < 0 || b < 0) {
+                alert(" Bạn phải nhập số dương, xin hãy nhập lại!")
+            }
+        } while (a < 0 || b < 0) //điều kiện sai để thực hiện lại vòng lặp
+
+        for (let i = 1; i <= a; i++) {
+            for (let j = 1; j <= b; j++) {
+
+                if (i == 1 || j == 1 || i == a || j == b) {
+                    document.write("* ")
+                } else {
+                    document.write("&nbsp&nbsp&nbsp")
+                }
+            }
+            document.write("<br/>")
+        }
+    </script>
+</body>
+
+</html>
